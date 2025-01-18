@@ -37,7 +37,7 @@ const NavBar = () => {
         text-xl items-center px-12 h-20 text-light1 '>
 
                 <a href="#">Danya Cheng</a>
-
+ 
                 <ul className='hidden md:flex gap-12 z-10 cursor-pointer text-med '>
                     <li className='nav '><Link to="about" smooth={true} offset={50} duration={500}>about</Link></li>
                     <li className='nav '><Link to="project" smooth={true} offset={50} duration={500}>projects</Link></li>
