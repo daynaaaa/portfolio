@@ -22,7 +22,7 @@ h3{
   display: flex;
   flex-direction: column;
   padding: 14px;
-  background: #eee4e8;
+  background: linear-gradient(#7F7B82, #1c162e);
   gap: 14px;
 }
 
@@ -75,6 +75,17 @@ p {
   gap: 14px;
 }
 
+span {
+  color: #202124;
+}
+
+.shiny-effect {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 1;
+  background: radial-gradient(circle, rgba(178, 19, 202, 0.2), transparent 70%);
+}
 
 
 @media (min-width: 640px) {
@@ -87,4 +98,9 @@ p {
   p {
     font-size: 1em;
   }
+}
+
+.bggrad1 {
+  background: linear-gradient(#726d76, transparent);
+	height:10vh;
 }

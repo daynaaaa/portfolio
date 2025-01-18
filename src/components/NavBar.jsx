@@ -32,32 +32,31 @@ const NavBar = () => {
     }
 
     return (
-        <div className='fixed top-0 left-0 w-full bg-opacity-70 backdrop-blur-md z-50 '>
-            <div className='max-w-[1300px] mx-auto bg-red-200 flex justify-between text-gray-200
-        text-xl items-center px-12 h-20'>
+        <div className='fixed top-0 left-0 w-full bg-opacity-70 backdrop-blur-md z-50 bggrad1 '>
+            <div className='max-w-[1300px] mx-auto flex justify-between 
+        text-xl items-center px-12 h-20 text-light1 '>
 
                 <a href="#">Danya Cheng</a>
 
-                <ul className='hidden md:flex gap-12 z-10 cursor-pointer'>
-                    <li><Link to="skills" smooth={true} offset={50} duration={500}>about</Link></li>
-                    <li><Link to="projects" smooth={true} offset={50} duration={500}>projects</Link></li>
-                    <li><Link to="contact" smooth={true} offset={50} duration={500}>contact</Link></li>
+                <ul className='hidden md:flex gap-12 z-10 cursor-pointer text-med '>
+                    <li className='text-light1 '><Link to="hero" smooth={true} offset={50} duration={500}>about</Link></li>
+                    <li className='text-light1 '><Link to="projects" smooth={true} offset={50} duration={500}>projects</Link></li>
+                    <li className='text-light1 '><Link to="contact" smooth={true} offset={50} duration={500}>contact</Link></li>
                 </ul>
-                <div onClick={toggleNav} className='md:hidden z-50'>
-                    {nav ? <AiOutlineClose size={30} /> : <AiOutlineMenu size={30} />}
+                <div onClick={toggleNav} className='md:hidden z-50 text-med fill-current'>
+                    {nav ? <AiOutlineClose size={30} /> : <AiOutlineMenu size={30} className='fill-light2' />}
 
-                </div>
+                </div> 
 
                 <motion.div
                 initial={false}
                 animate={nav ? 'open' : 'closed'}
                 variants={menuVariants}
-                className='fixed left-0 top-0 w-full min-h-screen bg-gray-800 z-40'
-                >
-                    <ul className='font-semibold text-4xl space-y-8 mt-24 text-center'>
-                        <li><Link to="skills" smooth={true} offset={50} duration={500}>about</Link></li>
-                        <li><Link to="projects" smooth={true} offset={50} duration={500}>projects</Link></li>
-                        <li><Link to="contact" smooth={true} offset={50} duration={500}>contact</Link></li>
+                className='fixed left-0 top-0 w-full min-h-screen bg-dark1 z-40 '>
+                    <ul className='font-semibold text-4xl space-y-8 mt-24 text-center text-med '>
+                    <li className='text-med '><Link to="hero" onClick={closeNav} smooth={true} offset={50} duration={500}>about</Link></li>
+                    <li className='text-med '><Link to="projects" onClick={closeNav} smooth={true} offset={50} duration={500}>projects</Link></li>
+                    <li className='text-med '><Link to="contact" onClick={closeNav} smooth={true} offset={50} duration={500}>contact</Link></li>
                     </ul>
                 </motion.div>
 
