@@ -14,8 +14,10 @@ export default function About() {
                 <div className='abt text-light1 '>
                     Some things about me:
                     <li className='text-light2 '>I draw in my free time (ig: @dayna.ch)</li>
-                    <li className='text-light2 '>I like taking photos</li>
-                    <li className='text-light2 '>I have a cat named taco</li>
+                    <li className='text-light2 '>I play piano & cello 🎹 🎻</li>
+                    <li className='text-light2 '>I'm also learning the guitar currently 🎸</li>
+                    <li className='text-light2 '>I like taking photos 📸</li>
+                    <li className='text-light2 '>My cat's name is taco</li>
                 </div>
                 
             </div>
