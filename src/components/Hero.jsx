@@ -56,11 +56,11 @@ const Hero = () => {
                 >
 
                     <div className="flex gap-6 flex-row text-4xl md:text-6xl ">
-                        <motion.a whileHover={{ scale: 1.2 }} href="https://github.com/daynaaaa">
+                        <motion.a whileHover={{ scale: 1.2 }} href="https://github.com/daynaaaa" target="_blank">
                             <AiOutlineGithub className='fill-light2'/>
                         </motion.a>
 
-                        <motion.a whileHover={{ scale: 1.2 }} href="https://www.linkedin.com/in/danya-cheng/">
+                        <motion.a whileHover={{ scale: 1.2 }} href="https://www.linkedin.com/in/danya-cheng/" target="_blank">
                             <AiOutlineLinkedin className='fill-light2'/>
                         </motion.a>
                     </div>
@@ -69,8 +69,8 @@ const Hero = () => {
 
 
             <motion.img 
+                className="w-[300px] md:w-[450px] rounded "
                 src={image1}
-                className="w-[300px] md:w-[450px]"
                 initial={{ opacity: 0, scale: 0.8 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}

@@ -10,10 +10,14 @@ export default function About() {
         whileInView={{ opacity: 1 }}
         >
             <h2>About Me</h2>
-            <div className="text-light2 md:text-2xl text-lg mb-6 mx-1 ">
-                Some things about me:
-                <li className='text-light2 '>I draw in my free time (ig: @dayna.ch)</li>
-                <li className='text-light2 '>I draw in my free time (ig: @dayna.ch)</li>
+            <div className="text-light2 md:text-2xl text-lg mb-6 mx-1 text-center ">
+                <div className='abt text-light1 '>
+                    Some things about me:
+                    <li className='text-light2 '>I draw in my free time (ig: @dayna.ch)</li>
+                    <li className='text-light2 '>I like taking photos</li>
+                    <li className='text-light2 '>I have a cat named taco</li>
+                </div>
+                
             </div>
 
         </motion.p>
