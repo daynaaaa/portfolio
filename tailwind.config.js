@@ -13,7 +13,7 @@ export default {
       'light2': '#BFACB5',
       'med': '#7F7B82',
       'dark1': '#444554',
-      'dark2': '#172121'
+      'dark2': '#302e33'
     }
   },
   plugins: [],

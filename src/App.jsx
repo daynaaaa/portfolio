@@ -1,6 +1,7 @@
+import About from "./components/About"
 import Hero from "./components/Hero"
-import HomeMain from "./components/HomeMain"
 import NavBar from "./components/NavBar"
+import Projects from "./components/Projects"
 import Skills from "./components/Skills"
 
 function App() {
@@ -9,8 +10,10 @@ function App() {
     <main>
       <NavBar/>
       <Hero/>
+      <About/>
       {/*<Skills/>*/}
-      <HomeMain/>
+
+      <Projects/>
 
     </main>
   )

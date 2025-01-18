@@ -1,5 +1,5 @@
 import React from "react";
-import profilepic from "../assets/catto.png";
+import image1 from "../assets/image1.jpg";
 import {
   AiOutlineGithub,
   AiOutlineLink,
@@ -17,7 +17,7 @@ import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
-    <div className="mt-24 max-w-[1200px] mx-auto relative">
+    <div className="mt-24 max-w-[1200px] mx-auto relative pb-10">
         <div className="grid md:grid-cols-2 place-items-center gap-8">
             <motion.div
             initial={{ opacity: 0, y: -50 }}
@@ -55,7 +55,7 @@ const Hero = () => {
                 className="flex flex-row items-center gap-6 my-4 md:mb-0"
                 >
 
-                    <div className="flex gap-6 flex-row text-4xl md:text-6xl text-light1 stroke-light1 fill-current z-20 ">
+                    <div className="flex gap-6 flex-row text-4xl md:text-6xl ">
                         <motion.a whileHover={{ scale: 1.2 }} href="https://github.com/daynaaaa">
                             <AiOutlineGithub className='fill-light2'/>
                         </motion.a>
@@ -69,7 +69,7 @@ const Hero = () => {
 
 
             <motion.img 
-                src={profilepic}
+                src={image1}
                 className="w-[300px] md:w-[450px]"
                 initial={{ opacity: 0, scale: 0.8 }}
                 whileInView={{ opacity: 1, scale: 1 }}
