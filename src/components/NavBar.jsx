@@ -41,7 +41,7 @@ const NavBar = () => {
                 <ul className='hidden md:flex gap-12 z-10 cursor-pointer text-med '>
                     <li className='nav '><Link to="about" smooth={true} offset={50} duration={500}>about</Link></li>
                     <li className='nav '><Link to="project" smooth={true} offset={50} duration={500}>projects</Link></li>
-                    <li className='nav '><Link to="contact" smooth={true} offset={50} duration={500}>contact</Link></li>
+                    {/*<li className='nav '><Link to="skills" smooth={true} offset={50} duration={500}>skills</Link></li>*/}
                 </ul>
                 <div onClick={toggleNav} className='md:hidden z-50 text-med fill-current'>
                     {nav ? <AiOutlineClose size={30} /> : <AiOutlineMenu size={30} className='fill-light2' />}
@@ -56,7 +56,7 @@ const NavBar = () => {
                     <ul className='font-semibold text-4xl space-y-8 mt-24 text-center text-med '>
                     <li className='nav '><Link to="about" onClick={closeNav} smooth={true} offset={50} duration={500}>about</Link></li>
                     <li className='nav '><Link to="projects" onClick={closeNav} smooth={true} offset={50} duration={500}>projects</Link></li>
-                    <li className='nav '><Link to="contact" onClick={closeNav} smooth={true} offset={50} duration={500}>contact</Link></li>
+                    {/*<li className='nav '><Link to="skills" onClick={closeNav} smooth={true} offset={50} duration={500}>skills</Link></li>*/}
                     </ul>
                 </motion.div>
 

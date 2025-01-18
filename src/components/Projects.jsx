@@ -10,7 +10,7 @@ export default function Projects() {
     return (
         <div id="project">
           <h2>My Projects</h2>
-          <div className="projects grid-cols-1 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 ">
+          <div className="projects grid-cols-1 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 ">
             <motion.p
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
