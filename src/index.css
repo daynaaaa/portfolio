@@ -145,6 +145,12 @@ span {
       background-color: #343545;
     }
 
+
+    ul{
+      display: flex;
+      flex-wrap: wrap;
+    }
+    
     header{
       display: flex;
       align-items: center;
