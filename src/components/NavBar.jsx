@@ -45,10 +45,15 @@ const NavBar = () => {
                 <NavLink to="/">Danya Cheng</NavLink>
  
                 <ul className='hidden md:flex gap-12 z-10 cursor-pointer text-med '>
-                    <li className='nav '><Link to="/about" smooth={true} offset={50} duration={500}>about</Link></li>
+                    <li className='nav '>
+                        <NavLink to="/about" smooth={true} offset={50} duration={500}>about</NavLink>
+                    </li>
+                    <li className='nav '><NavLink to="/projects" smooth={true} offset={50} duration={500}>projects</NavLink></li>
+                    <li className='nav '><NavLink to="/designs" smooth={true} offset={50} duration={500}>designs</NavLink></li>
+                    {/*<li className='nav '><Link to="/about" smooth={true} offset={50} duration={500}>about</Link></li>
                     <li className='nav '><Link to="/projects" smooth={true} offset={50} duration={500}>projects</Link></li>
                     <li className='nav '><Link to="/designs" smooth={true} offset={50} duration={500}>designs</Link></li>
-
+                    */}
                     {/*<li className='nav '><Link to="skills" smooth={true} offset={50} duration={500}>skills</Link></li>*/}
                 </ul>
                 <div onClick={toggleNav} className='md:hidden z-50 text-med fill-current'>

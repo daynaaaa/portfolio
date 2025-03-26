@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 
 export default function Projects() {
     return (
-        <div id="project">
+        <div id="project" className='p-10 '>
           <h2>My Projects</h2>
           <div className="projects grid-cols-1 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 ">
             <motion.p
