@@ -22,8 +22,13 @@ h3{
   display: flex;
   flex-direction: column;
   padding: 14px;
-  background: linear-gradient(#7F7B82, #1c162e);
+  background: linear-gradient(#1c162e, #7F7B82);
   gap: 14px;
+}
+
+body {
+  background-color: #7F7B82;
+  /*background-color: linear-gradient(#1c162e, #7F7B82);*/
 }
 
 header {
@@ -110,14 +115,14 @@ span {
 
 
 .bggrad1 {
-  background: linear-gradient(#726d76, transparent);
+  background: linear-gradient(#0e0b18, transparent);
 	height:10vh;
 }
 
 .nav{
   color: #BFACB5;
   &:hover{
-    color: #343545;
+    color: #928289;
   }
 }
 
