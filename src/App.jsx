@@ -16,16 +16,16 @@ function App() {
       <NavBar />
       <Routes>
         <Route 
-          path="/" 
+          path="/portfolio" 
           element={<Hero />} />
         <Route 
-          path="/about" 
+          path="/portfolio-about" 
           element={<About />} />
         <Route 
-          path="/projects" 
+          path="/portfolio-projects" 
           element={<Projects />} />
         <Route 
-          path="/designs" 
+          path="/portfolio-designs" 
           element={<Designs />} />
         
       </Routes>
