@@ -1,14 +1,10 @@
-import React from 'react'
-import {
-    AiOutlineGithub,
-    AiOutlineLink,
-    AiOutlineLinkedin,
-  } from "react-icons/ai";
+//import React from 'react'
 import { motion } from "framer-motion";
 import yb1 from "../assets/yb page 1.png";
 import yb2 from "../assets/yb page 2.png";
 import yb3 from "../assets/club divider.png";
 import yb4 from "../assets/student life divider.png";
+import nvg from "../assets/navigoose.png";
 
 
 
@@ -18,6 +14,24 @@ export default function Designs() {
           <h2>My Designs</h2>
           
           <div className="designs grid-cols-1 md:grid-cols-2 sm:grid-cols-1 ">
+          <motion.p
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                >
+                <div className="design max-w-[600px]">
+                    <motion.img 
+                        className="w-[550px] md:w-[550px] rounded-3xl "
+                        src={nvg}
+                        initial={{ opacity: 0, scale: 0.8 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 1 }}
+                    />
+                    <div>
+                        <h3 className='text-light1'>Navigoose Website Design</h3>
+                    </div>
+                </div>
+            </motion.p>
             <motion.p
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}

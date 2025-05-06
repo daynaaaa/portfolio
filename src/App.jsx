@@ -6,7 +6,7 @@ import About from "./components/About"
 import Hero from "./components/Hero"
 import NavBar from "./components/NavBar"
 import Projects from "./components/Projects"
-import Skills from "./components/Skills"
+//import Skills from "./components/Skills"
 import Designs from "./components/Designs";
 
 function App() {
@@ -16,16 +16,16 @@ function App() {
       <NavBar />
       <Routes>
         <Route 
-          path="/portfolio" 
+          path="/" 
           element={<Hero />} />
         <Route 
-          path="/portfolio-about" 
+          path="/about" 
           element={<About />} />
         <Route 
-          path="/portfolio-projects" 
+          path="/projects" 
           element={<Projects />} />
         <Route 
-          path="/portfolio-designs" 
+          path="/designs" 
           element={<Designs />} />
         
       </Routes>
